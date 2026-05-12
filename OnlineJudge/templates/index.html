@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toph Clone | Online Judge</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="logo">TOPH CLONE</div>
+        <nav>
+            <a href="#" class="nav-link active" onclick="loadPage('home')">
+                <i data-lucide="home"></i> Home
+            </a>
+            <a href="#" class="nav-link" onclick="loadPage('problems')">
+                <i data-lucide="code"></i> Problems
+            </a>
+            <a href="#" class="nav-link" onclick="loadPage('submissions')">
+                <i data-lucide="history"></i> Submissions
+            </a>
+            <a href="#" class="nav-link" onclick="loadPage('leaderboard')">
+                <i data-lucide="trophy"></i> Leaderboard
+            </a>
+        </nav>
+        <div id="auth-section" style="margin-top: auto;">
+            <!-- Will be populated by JS -->
+        </div>
+    </aside>
+
+    <main id="app">
+        <div class="header">
+            <h1 id="page-title">Welcome Back</h1>
+            <div id="user-info"></div>
+        </div>
+        
+        <div id="content" class="animate-fade">
+            <!-- Content loaded dynamically -->
+            <div class="problem-grid" id="problem-list"></div>
+        </div>
+    </main>
+
+    <script src="/static/js/app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
